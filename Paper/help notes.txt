@@ -1,0 +1,190 @@
+What is the Bellman-Ford algorithm for finding single source shortest paths? What are its main advantages over Dijkstra?
+The Bellman-Ford algorithm finds single source shortest paths by repeatedly relaxing distances until there are no more distances to relax. Relaxing distances is done by checking if an intermediate point provides a better path than the currently chosen path. After a number of iterations that is slightly less than the node count, we can check if the solution is optimal. If not, there is a cycle of negative edges that will provide better paths infinitely long.
+This algorithm has the advantage over Dijkstra because it can handle graphs with negative edges, while Dijkstra is limited to non-negative ones. The only limitation it has are graphs with cycles that have an overall negative path, but this would just mean that there is no finite solution. Let’s again just implement finding a distance, rather than the actual path that it represents:
+FUNCTION bellman_ford(graph, start_node, end_node)
+	dist = Array[graph.node_count()]
+	FOR n IN [0..graph.node_count()]
+		dist[n] = infinity
+	END FOR
+	updated = False
+	FOR x in [0..graph.node_count()]
+		updated = false
+		FOR n in [0..graph.node_count()]
+			FOR p IN graph[n].parents()
+				new_distance = dist[p.point] + p.distance
+				IF dist[n] > new_distance
+					dist[n] = new_distance
+					updated = true
+				END IF
+			END FOR
+		END FOR
+		IF !updated
+			BREAK
+		END IF
+	END FOR
+	IF updated
+		RETURN ERROR(“Contains negative cycles, unsolvable”)
+	ELSE IF dist[end_node] == infinity
+		RETURN ERROR(“There is no connection between the start and end node”)
+	ELSE
+		RETURN dist[end_node]
+	END IF
+The complexity of this algorithm is O(V * E), which is slower than Dijkstra in most cases. So this algorithm should be used only when we expect negative edges to exist.
+
+The table below shows the fares between stations for intercity travel.
+						Cols (destination)
+ 				 		V		W		X		Y		Z
+
+	Rows (source) 	    	 V		0		15		Inf		5		Inf
+
+
+
+		    	   	W		Inf		20		1		7		Inf
+
+
+		    
+    				X		8		 9		Inf		0		6
+
+
+
+    			 	Y		0		 1		 3		Inf		 2
+
+
+
+   				 Z		6		Inf		 1		Inf		 Inf
+
+		Compute the minimum fare itinerary from source station V to destination station X. 
+		Solution
+		V->Y->W->X 
+		= 5+1+1 
+		= 7 
+
+Compare the quick-sort and merge-sort algorithms in terms of their time and space complexity. Which is better in terms of time complexity? Which is better in terms of space complexity? 
+Merge-sort’s time complexity is guaranteed O(n log n), so it is faster than quick- sort for some inputs. Merge-sort’s space complexity is O(n), since it needs an auxiliary array. Quick- sort’s space complexity is O(log n) in the best case and O(n) in the worst case, since it only requires extra space for recursion. So merge-sort takes more space for some inputs.
+Design an algorithm that finds the number of ways in which you can traverse N meters by doing jumps of 1, 2, 3, 4, or 5 meter lengths. Assume that N can be a very large number. What is the resulting complexity?
+We can use dynamic programming for solving this problem. Let’s use n[k] to represent the number of ways we can reach distance k. That distance can be reached by jumping from one of the 5 previous distances. Thus the number of ways in which we can reach this distance is the sum of the ways in which we can reach the previous 5 distances:
+n[k] = n[k-1] + n[k-2] + n[k-3] + n[k-4] + n[k-5]
+The solution is a simple for loop.
+FUNCTION ways(N)
+	Array n[N+1]
+	n[0] = 1
+	FOR k IN [1..N]
+		n[k] = 0
+		FOR d IN [1..min(5, k)+1]
+			n[k] += n[k - d]
+		END FOR
+	END FOR
+	RETURN n[N]
+This solution has a time complexity of O(N). But, we can have even better performance. The given sum can be represented as a 1x5 matrix of ones multiplied by a 5x1 matrix of previous elements. If we use the same approach for shifting, we can get the relation B[k] = A * B[k-1], where:
+B[k] =
+	[n[k-4]	]
+	[n[k-3]	]
+	[n[k-2]	]
+	[n[k-1]	]
+	[n[k]	]
+A =	[0	1	0	0	0]
+	[0	0	1	0	0]
+	[0	0	0	1	0]
+	[0	0	0	0	1]
+	[1	1	1	1	1]
+If B[0] = [0 0 0 0 1]’, then [0 0 0 0 1] * B[k] = n[k]. Now, due to B[k] = A * B[k-1], B[k] = A^T * B[0]. With that, the solution of our problem can be represented as a relation n[N] = [0 0 0 0 1] * A^N * [0 0 0 0 1]’. If we use the previously mentioned optimal approach for calculating pow(A, N), this solution has an O(log N) time complexity. We have to keep in mind that this does have a high constant bound to this complexity, since matrix multiplication takes time. But, for a large enough N, this solution is optimal.
+
+
+You have a set of date intervals represented by StartDate and EndDate. How would you efficiently calculate the longest timespan covered by them? What will be the time complexity?
+FUNCTION MaxTimespan(StartDates, EndDates)
+   Sort(StartDates, EndDates)
+   ActStartDate = StartDates[1]
+   ActEndDate = EndDates[1]
+   ActTimespan = ActEndDate - ActStartDate
+   FOR i in 2..StartDates.Length
+      IF StartDates[i] BETWEEN ActStartDate AND ActEndDate
+         ActEndDate = MAX(ActEndDate, EndDates[i])
+         ActTimespan = MAX(ActTimespan, ActEndDate - ActStartDate)
+      ELSE
+         ActStartDate = StartDates[i]
+         ActEndDate = EndDates[i]
+      END IF
+   END FOR 
+   RETURN ActTimespan
+The overall time complexity is O(NlogN) because:
+Sort intervals by start date. Time complexity is O(NlogN).
+Take first interval as actual range. Loop over intervals and if the current StartDate is within the actual range, extend EndDate of the actual range if needed and extend maximal timespan achieved so far if needed. Otherwise, use current interval as new actual range. Time complexity is O(N).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
