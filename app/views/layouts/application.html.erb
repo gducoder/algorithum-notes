@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DispatchNew</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+  <%= render partial: "shared/navbar" %>
+
+  <% if notice %>
+    <p align="center" class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p align="center" class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
+
+  </body>
+</html>

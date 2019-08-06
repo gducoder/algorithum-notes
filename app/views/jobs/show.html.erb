@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-sm-8 ">
+
+    <h1 align="center">View Job</h1>
+    <div class="panel panel-success">
+
+      <div class="panel-heading">
+        <strong><%= @job.details %></strong>
+        </div>
+
+      <div class="panel-body">
+        <dl class="dl-vertical">
+
+          <dt>Job ID</dt>
+          <dd><%= @job.id %></dd>
+          <dt>Source Co-ordinates</dt>
+          <dd>(<%= @job.source_lat %> , <%= @job.source_long %>)</dd>
+          <dt>Destination Co-ordinates</dt>
+          <dd>(<%= @job.destination_lat %> , <%= @job.destination_long %>)</dd>
+          <dt>Job Status</dt>
+          <dd><%= @job.status %></dd>
+
+          <dt>Driver Assigned</dt>
+          <% if @job.user_id.nil? %>
+          <dd>Not Assigned</dd>
+          <% else %>
+            <dd><%= @job.user.name %></dd>
+            <% end %>
+        </dl>
+      </div>
+    </div>
+    <%= link_to 'Back', :back , class: "btn btn-primary pull-right" %>
+  </div>
+
+</div>

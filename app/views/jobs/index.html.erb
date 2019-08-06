@@ -1,0 +1,64 @@
+
+<h1 align="center">All Jobs</h1>
+
+<div class="row">
+  <div class="col-sm-8 ">
+
+    <%= link_to 'Create new job', new_job_path,class: "btn btn-success " %><br><br>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Job Id</th>
+        <th>Job Description</th>
+        <th>Job Status</th>
+        
+
+
+      </tr>
+      </thead>
+      <tbody>
+      <% @jobs.each do |job| %>
+        <tr>
+          <td><%= link_to job.id,job_path(job) %></td>
+          <td><%= job.details %></td>
+          <td><%= job.status %></td>
+          <td>
+          <% if job.user_id.nil? && job.status != "Complete" %>
+
+          <%= link_to 'Assign Job',job_assignjob_path(job), class: "btn btn-success pull-right " %>
+            <% end %>
+
+            <% if job.status != "Complete" && job.user_id.present? %>
+            <%= link_to 'Close Job',job_close_job_path(job),method: :patch, class: "btn btn-warning pull-right " %>
+              <% end %>
+
+            <% if job.status == "Complete" || job.status == "Job Created" %>
+              <%= link_to 'Delete', job_path(job),
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' }, class: "btn btn-danger pull-right" %>
+              <% end %>
+
+              <%= link_to 'Edit', edit_job_path(job), class: "btn btn-primary pull-right " %></td>
+
+
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+

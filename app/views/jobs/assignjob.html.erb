@@ -1,0 +1,22 @@
+<%= form_with model: @job, url: job_assign_job_update_path  , local: true do |form| %>
+
+<h1 align="center">Assign Job</h1>
+
+<div class="row">
+  <div class="col-sm-8 ">
+
+
+    <h3><%= form.label :"Select Driver" %></h3>
+    <div class="input-group input-group-md">
+      <p>Select the driver you want to assign this job to:
+      <%= form.collection_select :user_id, @users, :id, :name, :prompt => "Select a driver" %></p>
+      </div>
+
+    <div>
+      <%= form.button :Submit ,class: "btn btn-success pull-left"%>
+
+    </div>
+
+  </div>
+</div>
+<% end %>

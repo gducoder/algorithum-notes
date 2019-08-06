@@ -1,0 +1,38 @@
+
+<h1 align="center">All Drivers</h1>
+<br><br>
+
+<div class="row">
+  <div class="col-sm-8 ">
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>User Email</th>
+        <th>User Status</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.status %></td>
+
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+
+
+
+
+    <%= link_to 'Back', jobs_path, class: "btn btn-primary pull-right" %>
+  </div>
+
+</div>

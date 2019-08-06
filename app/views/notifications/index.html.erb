@@ -1,0 +1,38 @@
+
+<h1 align="center">Notifications</h1>
+
+<div class="row">
+  <div class="col-sm-8 ">
+    <% @notifications.each do |notification| %>
+      <div class="panel panel-success">
+
+        <div class="panel-heading">
+          <strong>Job Assigned to You!</strong>
+
+        </div>
+
+        <div class="panel-body">
+          <dl class="dl-vertical">
+            <strong><span class="pull-left"><%= link_to 'View Job', job_path(notification.job_id)  %></span></strong>
+            <%= link_to 'Reject', job_reject_job_path(job_id: notification.job_id, notification_id: notification.id),method: :patch, class: "btn btn-danger pull-right" %>
+            <%= link_to 'Accept', job_accept_job_path(job_id: notification.job_id,notification_id: notification.id) ,method: :patch, class: "btn btn-success pull-right" %>
+
+
+
+    </dl>
+    </div>
+    </div>
+    <% end %>
+
+    <%= link_to 'Back', user_path(current_user.id) , class: "btn btn-primary pull-right" %>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
