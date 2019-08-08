@@ -9,7 +9,7 @@ class UserController < ApplicationController
   def show
 
     @user = User.find(params[:id])
-    render json: @user
+    render json: @user, status: 200
   end
 
   def is_admin
