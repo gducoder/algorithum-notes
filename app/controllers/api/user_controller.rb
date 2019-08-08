@@ -2,7 +2,7 @@ class UserController < ApplicationController
   before_action :is_admin ,only: [:index]
   def index
     @users = User.where(:user_type => "User")
-    render
+    render json: @users, status: 200
   end
 
   def show
