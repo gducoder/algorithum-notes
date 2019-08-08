@@ -44,7 +44,7 @@ class JobsController < ApplicationController
 
   def index
     @jobs=Job.all
-    #render json: @jobs, status: 200
+    # render json: @jobs, status: 200,adapter: :json
   end
 
   def new

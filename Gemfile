@@ -14,6 +14,8 @@ gem 'devise'
 gem 'pry', '~> 0.12.2'
 gem 'active_model_serializers'
 gem 'jquery-rails'
+gem 'devise_token_auth', '~> 0.1.31.beta8'
+gem 'omniauth'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
