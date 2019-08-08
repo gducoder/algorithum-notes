@@ -51,7 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.0.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.0.1, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cancancan (v3.0.1, RVM: ruby-2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="capybara (v3.27.0, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v3.28.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="case_transform (v0.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v1.0.1, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chromedriver-helper (v2.1.1, RVM: ruby-2.6.3) [gem]" level="application" />
@@ -61,8 +61,8 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.4, RVM: ruby-2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="devise (v4.6.2, RVM: ruby-2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="devise_token_auth (v1.1.0, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.4.3, RVM: ruby-2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise_token_auth (v0.1.43, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.8.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.11.1, RVM: ruby-2.6.3) [gem]" level="application" />

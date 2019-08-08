@@ -39795,3 +39795,1940 @@ No serializer found for resource: #<Job id: 42, status: "Job Created", source_la
 Completed 200 OK in 336ms (Views: 23.1ms | ActiveRecord: 4.1ms)
 
 
+Started GET "/" for ::1 at 2019-08-08 17:35:24 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-08 17:35:25 +0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-08 17:35:25 +0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-08-08 17:35:26 +0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Adddefaultvaluetojobstatus (20190725145544)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (107.7ms)[0m  [1m[35mALTER TABLE "jobs" ALTER COLUMN "status" TYPE character varying, ALTER COLUMN "status" SET DEFAULT 'Job Created'[0m
+  ↳ db/migrate/20190725145544_adddefaultvaluetojobstatus.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190725145544"]]
+  ↳ bin/rails:9
+  [1m[35m (21.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to DeviseTokenAuthCreateUsers (20190807131933)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (261.6ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" character varying DEFAULT 'email' NOT NULL[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:8
+  [1m[35m (133.0ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "tokens" json[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:15
+  [1m[36mUser Update (47.1ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim@techcreatix.com"], ["updated_at", "2019-08-08 12:35:48.629370"], ["id", 1]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim+1@techcreatix.com"], ["updated_at", "2019-08-08 12:35:48.680081"], ["id", 2]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim+2@techcreatix.com"], ["updated_at", "2019-08-08 12:35:48.682441"], ["id", 3]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "test@example.com"], ["updated_at", "2019-08-08 12:35:48.684642"], ["id", 4]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "api@example.com"], ["updated_at", "2019-08-08 12:35:48.687464"], ["id", 5]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[35m (63.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_uid_and_provider" ON "users"  ("uid", "provider")[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:25
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190807131933"]]
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (34.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseTokenAuthCreateUsers (20190807131933)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mDROP INDEX  "index_users_on_uid_and_provider"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "tokens"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "uid"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "provider"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190807131933"]]
+  ↳ bin/rails:9
+  [1m[35m (19.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddJobAssignedToUsers (20190802111527)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "job_assigned"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190802111527"]]
+  ↳ bin/rails:9
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddJobReferenceToNotifications (20190801110745)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (35.8ms)[0m  [1m[35mALTER TABLE "notifications" DROP CONSTRAINT "fk_rails_81bac132e2"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "notifications" DROP COLUMN "job_id"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190801110745"]]
+  ↳ bin/rails:9
+  [1m[35m (24.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateNotifications (20190801084224)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "notifications"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190801084224"]]
+  ↳ bin/rails:9
+  [1m[35m (12.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddDefaultValueToUserStatus (20190730113333)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateNotifications (20190801084224)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (98.9ms)[0m  [1m[35mCREATE TABLE "notifications" ("id" bigserial primary key, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_b080fb4855"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190801084224_create_notifications.rb:3
+  [1m[35m (42.4ms)[0m  [1m[35mCREATE  INDEX  "index_notifications_on_user_id" ON "notifications"  ("user_id")[0m
+  ↳ db/migrate/20190801084224_create_notifications.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190801084224"]]
+  ↳ bin/rails:9
+  [1m[35m (24.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddJobReferenceToNotifications (20190801110745)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "notifications" ADD "job_id" bigint[0m
+  ↳ db/migrate/20190801110745_add_job_reference_to_notifications.rb:3
+  [1m[35m (41.0ms)[0m  [1m[35mCREATE  INDEX  "index_notifications_on_job_id" ON "notifications"  ("job_id")[0m
+  ↳ db/migrate/20190801110745_add_job_reference_to_notifications.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "notifications" ADD CONSTRAINT "fk_rails_81bac132e2"
+FOREIGN KEY ("job_id")
+  REFERENCES "jobs" ("id")
+[0m
+  ↳ db/migrate/20190801110745_add_job_reference_to_notifications.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190801110745"]]
+  ↳ bin/rails:9
+  [1m[35m (30.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddJobAssignedToUsers (20190802111527)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (148.9ms)[0m  [1m[35mALTER TABLE "users" ADD "job_assigned" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190802111527_add_job_assigned_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190802111527"]]
+  ↳ bin/rails:9
+  [1m[35m (23.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to DeviseTokenAuthCreateUsers (20190807131933)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (173.0ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" character varying DEFAULT 'email' NOT NULL[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:8
+  [1m[35m (140.6ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" character varying DEFAULT '' NOT NULL[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "tokens" json[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1000]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:15
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim@techcreatix.com"], ["updated_at", "2019-08-08 12:36:22.545095"], ["id", 1]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim+1@techcreatix.com"], ["updated_at", "2019-08-08 12:36:22.547417"], ["id", 2]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "mibrahim+2@techcreatix.com"], ["updated_at", "2019-08-08 12:36:22.548922"], ["id", 3]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "test@example.com"], ["updated_at", "2019-08-08 12:36:22.550307"], ["id", 4]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "uid" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["tokens", "\"--- {}\\n\""], ["uid", "api@example.com"], ["updated_at", "2019-08-08 12:36:22.551699"], ["id", 5]]
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:20
+  [1m[35m (55.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_uid_and_provider" ON "users"  ("uid", "provider")[0m
+  ↳ db/migrate/20190807131933_devise_token_auth_create_users.rb:25
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190807131933"]]
+  ↳ bin/rails:9
+  [1m[35m (22.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8423309543142382140)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-08-08 17:36:31 +0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (13.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 5021ms (Views: 4972.8ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 17:36:40 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 17:36:41 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.6ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 17:36:41 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-08-08 17:36:43 +0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/edit.html.erb within layouts/application (128.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 166ms (Views: 162.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 17:36:44 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/auth" for ::1 at 2019-08-08 17:36:51 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/auth/jobs" for ::1 at 2019-08-08 17:36:55 +0500
+Started GET "/omniauth/jobs?namespace_name=api&resource_class=User" for ::1 at 2019-08-08 17:36:55 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/omniauth/jobs"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/auth" for ::1 at 2019-08-08 17:37:43 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/auth" for ::1 at 2019-08-08 17:40:10 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/auth/" for ::1 at 2019-08-08 17:40:18 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/auth/sign_in" for ::1 at 2019-08-08 17:41:19 +0500
+Processing by DeviseTokenAuth::SessionsController#new as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 405 Method Not Allowed in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/auth/sign_in" for ::1 at 2019-08-08 17:41:32 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+Unpermitted parameter: :format
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/auth/sign_in?user[email]=mibrahim@techcreatix.com&user[password]=[FILTERED]" for ::1 at 2019-08-08 17:42:25 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"mibrahim@techcreatix.com", "password"=>"[FILTERED]"}}
+Unpermitted parameters: :user, :format
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/auth/sign_in?email=mibrahim@techcreatix.com&password=[FILTERED]" for ::1 at 2019-08-08 17:42:45 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mibrahim@techcreatix.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mibrahim@techcreatix.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "\"---\\nlNGfQjSIa-bP9klSvojyEg:\\n  :token: !ruby/string:BCrypt::Password\\n    str: \\\"$2a$12$zakN8CtZvPQH6LxgqO/i7O6xiQJHpE8fPpvgqFvYJILuioJ9/6JRK\\\"\\n    version: 2a\\n    cost: 12\\n    salt: \\\"$2a$12$zakN8CtZvPQH6LxgqO/i7O\\\"\\n    checksum: 6xiQJHpE8fPpvgqFvYJILuioJ9/6JRK\\n  :expiry: 1566477765\\n\""], ["updated_at", "2019-08-08 12:42:46.070911"], ["id", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (23.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 1415ms (Views: 0.6ms | ActiveRecord: 24.9ms)
+
+
+Started POST "/api/jobs?access-token=0Legrvd3Zic9PhVEUozdHg&client=lNGfQjSIa-bP9klSvojyEg&uid=mibrahim@techcreatix.com" for ::1 at 2019-08-08 17:44:14 +0500
+Processing by Api::JobsController#create as JSON
+  Parameters: {"access-token"=>"0Legrvd3Zic9PhVEUozdHg", "client"=>"lNGfQjSIa-bP9klSvojyEg", "uid"=>"mibrahim@techcreatix.com"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.2.3) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (5.2.3) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+devise (4.4.3) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (5.2.3) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (5.2.3) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.3) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.2.3) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (5.2.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (5.2.3) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/jobs?access-token=0Legrvd3Zic9PhVEUozdHg&client=lNGfQjSIa-bP9klSvojyEg&uid=mibrahim@techcreatix.com" for ::1 at 2019-08-08 17:44:20 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"0Legrvd3Zic9PhVEUozdHg", "client"=>"lNGfQjSIa-bP9klSvojyEg", "uid"=>"mibrahim@techcreatix.com"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "mibrahim@techcreatix.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/controllers/api/jobs_controller.rb:5
+No serializer found for resource: #<Job id: 1, status: "Accepted", source_lat: 6.0, source_long: 4.0, destination_lat: 6.0, destination_long: 5.0, details: "Lahore", created_at: "2019-08-07 08:48:53", updated_at: "2019-08-07 09:00:02", user_id: 2>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Job::ActiveRecord_Relation (0.54ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 275ms (Views: 13.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/jobs?access-token=0Legrvd3Zic9PhVEUozdHg&client=lNGfQjSIa-bP9klSvojyEg&uid=mibrahim@techcreatix.com" for ::1 at 2019-08-08 18:11:04 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"0Legrvd3Zic9PhVEUozdHg", "client"=>"lNGfQjSIa-bP9klSvojyEg", "uid"=>"mibrahim@techcreatix.com"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "mibrahim@techcreatix.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+No template found for Api::JobsController#index, rendering head :no_content
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 204 No Content in 277ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/api/jobs?access-token=0Legrvd3Zic9PhVEUozdHg&client=lNGfQjSIa-bP9klSvojyEg&uid=mibrahim@techcreatix.com" for ::1 at 2019-08-08 18:11:50 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"0Legrvd3Zic9PhVEUozdHg", "client"=>"lNGfQjSIa-bP9klSvojyEg", "uid"=>"mibrahim@techcreatix.com"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "mibrahim@techcreatix.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/controllers/api/jobs_controller.rb:5
+No serializer found for resource: #<Job id: 1, status: "Accepted", source_lat: 6.0, source_long: 4.0, destination_lat: 6.0, destination_long: 5.0, details: "Lahore", created_at: "2019-08-07 08:48:53", updated_at: "2019-08-07 09:00:02", user_id: 2>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Job::ActiveRecord_Relation (0.41ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 286ms (Views: 21.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-08 18:12:26 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.7ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/user" for ::1 at 2019-08-08 18:12:30 +0500
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:13
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1[0m  [["user_type", "User"]]
+  ↳ app/views/user/index.html.erb:19
+  Rendered user/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user.JSON" for ::1 at 2019-08-08 18:12:38 +0500
+Processing by UserController#index as 
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:13
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1[0m  [["user_type", "User"]]
+  ↳ app/views/user/index.html.erb:19
+  Rendered user/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user.json" for ::1 at 2019-08-08 18:12:41 +0500
+Processing by UserController#index as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:13
+Completed 406 Not Acceptable in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (UserController#index is missing a template for this request format and variant.
+
+request.formats: ["application/json"]
+request.variant: []):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/jobs" for ::1 at 2019-08-08 18:12:51 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:12:52 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:12:52 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/jobs?access-token=0Legrvd3Zic9PhVEUozdHg&client=lNGfQjSIa-bP9klSvojyEg&uid=mibrahim@techcreatix.com" for ::1 at 2019-08-08 18:17:30 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"0Legrvd3Zic9PhVEUozdHg", "client"=>"lNGfQjSIa-bP9klSvojyEg", "uid"=>"mibrahim@techcreatix.com"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "mibrahim@techcreatix.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/controllers/api/jobs_controller.rb:6
+No serializer found for resource: #<Job id: 1, status: "Accepted", source_lat: 6.0, source_long: 4.0, destination_lat: 6.0, destination_long: 5.0, details: "Lahore", created_at: "2019-08-07 08:48:53", updated_at: "2019-08-07 09:00:02", user_id: 2>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Job::ActiveRecord_Relation (0.38ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 286ms (Views: 21.2ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/api/auth/sign_in?email=mibrahim+1@techcreatix.com&password=[FILTERED]" for ::1 at 2019-08-08 18:18:26 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mibrahim 1@techcreatix.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mibrahim 1@techcreatix.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 401 Unauthorized in 62ms (Views: 59.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user" for ::1 at 2019-08-08 18:18:36 +0500
+Processing by UserController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:13
+  Rendering user/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1[0m  [["user_type", "User"]]
+  ↳ app/views/user/index.html.erb:19
+  Rendered user/index.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/api/auth/sign_in?email=mibrahim+1@techcreatix.com&password=[FILTERED]" for ::1 at 2019-08-08 18:19:02 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mibrahim 1@techcreatix.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mibrahim 1@techcreatix.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 401 Unauthorized in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/auth/sign_in?email=mibrahim@techcreatix.com&password=[FILTERED]" for ::1 at 2019-08-08 18:19:27 +0500
+Processing by DeviseTokenAuth::SessionsController#create as JSON
+  Parameters: {"email"=>"mibrahim@techcreatix.com", "password"=>"[FILTERED]"}
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (email = 'mibrahim@techcreatix.com' AND provider='email') ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "tokens" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["tokens", "\"---\\nlNGfQjSIa-bP9klSvojyEg:\\n  :token: !ruby/string:BCrypt::Password\\n    str: \\\"$2a$12$zakN8CtZvPQH6LxgqO/i7O6xiQJHpE8fPpvgqFvYJILuioJ9/6JRK\\\"\\n    version: 2a\\n    cost: 12\\n    salt: \\\"$2a$12$zakN8CtZvPQH6LxgqO/i7O\\\"\\n    checksum: 6xiQJHpE8fPpvgqFvYJILuioJ9/6JRK\\n  :expiry: 1566477765\\n3_SKXY5r7RHZnO-LxBwTbQ:\\n  :token: !ruby/string:BCrypt::Password\\n    str: \\\"$2a$12$mMytiKDG3gBiv7OfXgRjz.aMXFR88HnDIGW4RsZFaLsZ.k3Idf8xy\\\"\\n    version: 2a\\n    cost: 12\\n    salt: \\\"$2a$12$mMytiKDG3gBiv7OfXgRjz.\\\"\\n    checksum: aMXFR88HnDIGW4RsZFaLsZ.k3Idf8xy\\n  :expiry: 1566479967\\n\""], ["updated_at", "2019-08-08 13:19:28.566979"], ["id", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 2347ms (Views: 0.5ms | ActiveRecord: 8.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started POST "/api/auth?name=driver&email=driver@example.com&password=[FILTERED]&password_confirmation=[FILTERED]" for ::1 at 2019-08-08 18:22:09 +0500
+Processing by DeviseTokenAuth::RegistrationsController#create as JSON
+  Parameters: {"name"=>"driver", "email"=>"driver@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+Unpermitted parameter: :format
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."provider" = $2 LIMIT $3[0m  [["email", "driver@example.com"], ["provider", "email"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "encrypted_password", "created_at", "updated_at", "uid", "tokens") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "driver"], ["email", "driver@example.com"], ["encrypted_password", "$2a$11$SCkhpY5frH5dhIPoylNXmeAUWbnAxILzeR2nJmaL1bEKAzP3KiiNm"], ["created_at", "2019-08-08 13:22:09.517274"], ["updated_at", "2019-08-08 13:22:09.517274"], ["uid", "driver@example.com"], ["tokens", "\"--- {}\\n\""]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (35.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "tokens" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-08-08 13:22:10.060873"], ["tokens", "\"---\\nXpigi2_JFhhn95HQ8fLwjA:\\n  :token: !ruby/string:BCrypt::Password\\n    str: \\\"$2a$12$Z3qJNKA2s6MGKanVMNGTIeitDqwI2sOR7aFg7odXz3UJObJUvKyUK\\\"\\n    version: 2a\\n    cost: 12\\n    salt: \\\"$2a$12$Z3qJNKA2s6MGKanVMNGTIe\\\"\\n    checksum: itDqwI2sOR7aFg7odXz3UJObJUvKyUK\\n  :expiry: 1566480129\\n\""], ["id", 6]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (24.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 200 OK in 1445ms (Views: 0.7ms | ActiveRecord: 61.4ms)
+
+
+Started GET "/api/jobs?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:24:02 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user/6
+Filter chain halted as :is_admin rendered or redirected
+Completed 302 Found in 251ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:24:02 +0500
+Processing by UserController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/jobs?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:26:01 +0500
+Processing by Api::JobsController#index as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Filter chain halted as :is_admin rendered or redirected
+Completed 200 OK in 264ms (Views: 5.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:27:24 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Job (0.32ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 287ms (Views: 15.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:30:12 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (11.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 93ms (Views: 73.3ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2019-08-08 18:30:16 +0500
+Processing by JobsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-08-08 18:30:16 +0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.6ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-08-08 18:30:26 +0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UgWL+H902X8C9TtuygAm5hrr8qdrgKJF5JXILWIlfxFvuXCrYAGZA6VmHqyQ6d3Iy822wunXAUH2WP23gMBaEQ==", "user"=>{"email"=>"driver@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user/6
+Completed 302 Found in 135ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:30:26 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/job/1" for ::1 at 2019-08-08 18:30:34 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/job/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:30:40 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.5ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 1.0ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff01b0bf640>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:31:54 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 296ms (ActiveRecord: 7.3ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff01aaf32e8>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:31:56 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff018b859d8>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:31:57 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff01920a790>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs" for ::1 at 2019-08-08 18:32:13 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs/2/assignjob" for ::1 at 2019-08-08 18:32:16 +0500
+Processing by JobsController#assignjob as HTML
+  Parameters: {"job_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:25
+  Rendering jobs/assignjob.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1 AND "users"."job_assigned" = $2[0m  [["user_type", "User"], ["job_assigned", false]]
+  ↳ app/views/jobs/assignjob.html.erb:12
+  Rendered jobs/assignjob.html.erb within layouts/application (15.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 54.2ms | ActiveRecord: 1.8ms)
+
+
+Started PATCH "/jobs/2/assign_job_update" for ::1 at 2019-08-08 18:32:19 +0500
+Processing by JobsController#assign_job_update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9nhgnxnuFB8Xxljuo3FvwIVE09WUT5qtOXHkXwMYRF2efRekbDACcc2KIbqDl1GBxKl4bDHdt9LY3fcbTZ1S1w==", "job"=>{"user_id"=>"6"}, "button"=>"", "job_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:30
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/jobs_controller.rb:34
+  [1m[36mJob Update (0.5ms)[0m  [1m[33mUPDATE "jobs" SET "status" = $1, "user_id" = $2, "updated_at" = $3 WHERE "jobs"."id" = $4[0m  [["status", "Pending"], ["user_id", 6], ["updated_at", "2019-08-08 13:32:19.590538"], ["id", 2]]
+  ↳ app/controllers/jobs_controller.rb:34
+  [1m[35m (16.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/jobs_controller.rb:34
+  [1m[36mUser Update (7.6ms)[0m  [1m[33mUPDATE "users" SET "job_assigned" = $1 WHERE "users"."id" = $2[0m  [["job_assigned", true], ["id", 6]]
+  ↳ app/controllers/jobs_controller.rb:34
+Redirected to http://localhost:3000/jobs/2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/jobs_controller.rb:42
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:42
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("user_id", "created_at", "updated_at", "job_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 6], ["created_at", "2019-08-08 13:32:19.662400"], ["updated_at", "2019-08-08 13:32:19.662400"], ["job_id", 2]]
+  ↳ app/controllers/jobs_controller.rb:42
+  [1m[35m (27.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/jobs_controller.rb:42
+Completed 302 Found in 108ms (ActiveRecord: 57.6ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:32:19 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff01a2bb3a0>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:33:18 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 220ms (ActiveRecord: 4.5ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff018f1c600>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/2/assignjob" for ::1 at 2019-08-08 18:33:21 +0500
+Processing by JobsController#assignjob as HTML
+  Parameters: {"job_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:25
+  Rendering jobs/assignjob.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1 AND "users"."job_assigned" = $2[0m  [["user_type", "User"], ["job_assigned", false]]
+  ↳ app/views/jobs/assignjob.html.erb:12
+  Rendered jobs/assignjob.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs/2/assignjob" for ::1 at 2019-08-08 18:33:22 +0500
+Processing by JobsController#assignjob as HTML
+  Parameters: {"job_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:25
+  Rendering jobs/assignjob.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."user_type" = $1 AND "users"."job_assigned" = $2[0m  [["user_type", "User"], ["job_assigned", false]]
+  ↳ app/views/jobs/assignjob.html.erb:12
+  Rendered jobs/assignjob.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:33:25 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:33:32 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.5ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff01abcde98>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:33:44 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.8ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 6.3ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff018aa0018>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:34:35 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 75ms (Views: 34.8ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:34:36 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.1ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:34:43 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:34:45 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:34:47 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:34:48 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:34:49 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/job/1" for ::1 at 2019-08-08 18:34:54 +0500
+  
+ActionController::RoutingError (No route matches [GET] "/job/1"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/user/6" for ::1 at 2019-08-08 18:34:57 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:34:57 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/notifications" for ::1 at 2019-08-08 18:34:58 +0500
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/notifications_controller.rb:3
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Load (0.5ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications" WHERE "notifications"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/notifications/index.html.erb:6
+  Rendered notifications/index.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 35.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:34:59 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 71ms (Views: 66.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:35:04 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to 
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `back_url' for #<JobsController:0x00007ff018be5b80>):
+  
+app/controllers/jobs_controller.rb:68:in `show'
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:35:47 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 35.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:51 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:52 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:52 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:53 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 43ms (Views: 39.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:53 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:54 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:35:54 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/notifications" for ::1 at 2019-08-08 18:35:56 +0500
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/notifications_controller.rb:3
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Load (0.5ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications" WHERE "notifications"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/notifications/index.html.erb:6
+  Rendered notifications/index.html.erb within layouts/application (8.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 50ms (Views: 38.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:35:57 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 39.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:36:00 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 75.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:36:44 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:36:45 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:36:55 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (11.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 61ms (Views: 40.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:37:00 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:37:01 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.3ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/notifications" for ::1 at 2019-08-08 18:37:02 +0500
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/notifications_controller.rb:3
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Load (0.4ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications" WHERE "notifications"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/views/notifications/index.html.erb:6
+  Rendered notifications/index.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 69.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/jobs/2" for ::1 at 2019-08-08 18:37:03 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+  Rendering jobs/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/jobs/show.html.erb:27
+  Rendered jobs/show.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 44ms (Views: 38.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/jobs/1" for ::1 at 2019-08-08 18:37:06 +0500
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.4ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/jobs_controller.rb:66
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-08-08 18:37:06 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user/6
+Filter chain halted as :is_admin rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:37:06 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/6" for ::1 at 2019-08-08 18:37:06 +0500
+Processing by UserController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/user_controller.rb:8
+  Rendering user/show.html.erb within layouts/application
+  Rendered user/show.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:6
+  Rendered shared/_navbar.html.erb (3.7ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:37:34 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 4.9ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/jobs_controller.rb:14:in `show'
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:38:07 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 500 Internal Server Error in 314ms (Views: 8.7ms | ActiveRecord: 4.8ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/jobs_controller.rb:14:in `show'
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:38:13 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 500 Internal Server Error in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/jobs_controller.rb:14:in `show'
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:38:37 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 500 Internal Server Error in 5ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/jobs_controller.rb:14:in `show'
+Started GET "/api/jobs/1?access-token=nFiPM7oppKgNYICAkvoRyg&client=Xpigi2_JFhhn95HQ8fLwjA&uid=driver@example.com" for ::1 at 2019-08-08 18:39:10 +0500
+Processing by Api::JobsController#show as JSON
+  Parameters: {"access-token"=>"nFiPM7oppKgNYICAkvoRyg", "client"=>"Xpigi2_JFhhn95HQ8fLwjA", "uid"=>"driver@example.com", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "driver@example.com"], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mJob Load (0.2ms)[0m  [1m[34mSELECT  "jobs".* FROM "jobs" WHERE "jobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/jobs_controller.rb:10
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 200 OK in 284ms (Views: 7.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/jobs" for ::1 at 2019-08-08 18:39:52 +0500
+Processing by JobsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ibrahim/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering jobs/index.html.erb within layouts/application
+  [1m[36mJob Load (0.3ms)[0m  [1m[34mSELECT "jobs".* FROM "jobs"[0m
+  ↳ app/views/jobs/index.html.erb:20
+  Rendered jobs/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 73.1ms | ActiveRecord: 0.7ms)
+
+

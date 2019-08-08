@@ -64,6 +64,9 @@ class JobsController < ApplicationController
 
   def show
     @job = Job.find(params[:id])
+    if (@job.user_id != current_user.id && current_user.user_type != 'Admin')
+      redirect_back(fallback_location: root_path)
+    end
   end
 
   def destroy
