@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class  Api::UserController < Api::ApplicationController
   before_action :is_admin ,only: [:index]
   def index
     @users = User.where(:user_type => "User")
@@ -7,15 +7,18 @@ class UserController < ApplicationController
   end
 
   def show
-
     @user = User.find(params[:id])
-    render json: @user, status: 200
+    if (@user.id != current_user.id && current_user.user_type != 'Admin')
+      render :json => { :errors => "You cannot view other drivers profile" }
+    else
+      render json: @user, status: 200
+    end
   end
 
   def is_admin
 
     unless current_user.user_type =="Admin"
-      redirect_to user_path(current_user.id)
+      render :json => { :errors => "Only Admin can access this information" }
     end
 
   end
