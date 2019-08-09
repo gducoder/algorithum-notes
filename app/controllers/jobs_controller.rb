@@ -24,6 +24,9 @@ class JobsController < ApplicationController
   def assignjob
     @job = Job.find(params[:job_id])
     @users = User.where(:user_type => "User",:job_assigned => false)
+    if @job.user_id != nil
+      redirect_to root_path
+    end
   end
 
   def assign_job_update
