@@ -17,10 +17,8 @@ class  Api::UserController < Api::ApplicationController
 
   def is_admin
 
-    unless current_user.user_type =="Admin"
+    unless current_user.user_type == "Admin"
       render :json => { :errors => "Only Admin can access this information" }
     end
-
   end
-
 end

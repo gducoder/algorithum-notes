@@ -16,6 +16,7 @@ gem 'active_model_serializers'
 gem 'jquery-rails'
 gem 'devise_token_auth', '~> 0.1.31.beta8'
 gem 'omniauth'
+gem 'will_paginate', '~> 3.1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

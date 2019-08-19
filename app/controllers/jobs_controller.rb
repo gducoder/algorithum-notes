@@ -46,7 +46,8 @@ class JobsController < ApplicationController
   end
 
   def index
-    @jobs=Job.all
+    @jobs=Job.paginate(page: params[:page], per_page: 5)
+      #binding.pry
     # render json: @jobs, status: 200,adapter: :json
   end
 
